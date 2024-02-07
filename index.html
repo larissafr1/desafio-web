@@ -27,26 +27,41 @@
     <!-- MENU DE NAVEGAÇÃO -->
     <nav class="header_navigation">
         <div class="header_search">
-            <a href="">
-                <img src="./src/assets/img/logo png.png" alt="logo">
-            </a>
+            
             <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Produtos</a></li>
-                <li><a href="">Contato</a></li>
+              <li><a href="">INÍCIO</a></li>
+            </ul>
+
+            <ul> 
+              <li><a href="">PRODUTOS</a></li>
+            </ul>
+
+            <a href="">
+              <img src="./src/assets/img/logo.webp" alt="logo">
+          </a>
+
+            <ul>
+              <li><a href="">CONTATO</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="">SOBRE NÓS</a></li>
             </ul>
         </div>
     </nav>
+
+
+
 
     <main>
         <!-- CAROUSEL -->
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="./src/assets/img/carousel.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-item active" data-bs-interval="1800">
+                <img src="./src/assets/img/carousel.jpg" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="./src/assets/img/carousel2.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-item" data-bs-interval="1800">
+                <img src="./src/assets/img/carousel2.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="./src/assets/img/carousel3.jpeg" class="d-block w-100" alt="...">
@@ -63,11 +78,17 @@
           </div>
 
 
-        
-        <section class="news">
+        <div class="news">
+          <section class="section-news">
             <h1>NOVIDADES</h1>
-        </section>
-
+            <div class="food">
+              <img src="./src/assets/comidas/burguer.jpg" alt="">
+              <img src="./src/assets/comidas/pizza.jpg" alt="">
+              <img src="./src/assets/comidas/nachos.jpg" alt="">
+              <img src="./src/assets/comidas/salad.jpg" alt="">
+            </div>
+          </section>
+        </div>
 
         <section class="recomendations">
             <h1>RECOMENDADOS PARA VOCÊ</h1>
@@ -89,20 +110,20 @@
                 <div class="col">
 
                   <p>PAGAMENTO</p>
-                  <a><img src="image/paypal.png" width="50" alt=""></a>
-                  <a><img src="image/visa.png" width="50" alt=""></a>
-                  <a><img src="image/mastercard.png" width="50" alt=""></a>
-                  <a><img src="image/americanexpress.png" width="50" alt=""></a><br>
-                  <a><img src="image/pix.png" width="50" alt=""></a>
-                  <a><img src="image/boleto.png" width="50" alt=""></a>
-                  <a><img src="image/picpay.png" width="50" alt=""></a>
+                  <a><img src="./src/assets/img/paypal.png" width="50" alt=""></a>
+                  <a><img src="./src/assets/img/visa.png" width="50" alt=""></a>
+                  <a><img src="./src/assets/img/mastercard.png" width="50" alt=""></a>
+                  <a><img src="./src/assets/img/americanexpress.png" width="50" alt=""></a><br>
+                  <a><img src="./src/assets/img/pix.png" width="50" alt=""></a>
+                  <a><img src="./src/assets/img/boleto.png" width="50" alt=""></a>
+                  <a><img src="./src/assets/img/picpay.png" width="50" alt=""></a>
                 </div>
 
 
                 <div class="col">
                     <p>LINKS DE AJUDA</p><br>
                     <a class="nav-link active" aria-current="page" href="#">
-                    <h6>AJUDA E SUPORTE</h6>
+                    <h6>AJUDA E SUPORTE</h6><br>
                   </a>
                   <a class="nav-link active" aria-current="page" href="#">
                     <h6>TERMOS E CONDIÇÕES</h6>
@@ -110,17 +131,16 @@
                 </div>
 
                 <div class="col">
-                  <p>REDES SOCIAIS</p>
-                  <a href="facebook"><img src="image/facebook.png" width="80" alt=""></a><br>
+                  <p>REDES SOCIAIS</p><br>
+                  <a href="facebook"><img src="./src/assets/img/facebook.png" width="80" alt=""></a><br>
                   <br><a href="https://www.instagram.com/vergecompany/" target="_blank"><img src="./src/assets/img/instagram.png" width="30" alt=""></a>
                   <a href="twitter"><img src="./src/assets/img/twitter.png" width="30" alt=""></a>
                   <a href="gmail"><img src="./src/assets/img/gmail.png" width="30" alt=""></a>
                 </div>
 
                 <div class="col">
-                  <p>CONTATO</p>
-                  <p class="endereco">RUA TOMÉ DE SOUZA | N° 810 | SAVASSI</p>
-                  <!-- <p><a class="suport">vergecompany@gmail.com</a></p> -->
+                  <p>CONTATO</p><br>
+                  <p class="endereco">RUA TOMÉ DE SOUZA | N° 810 | SAVASSI</p><br>
                     </a><img src="./src/assets/img/whatsapp.png" width="20" alt=""> (31) 99999-9999
                   </p>
                 </div>
@@ -134,5 +154,6 @@
 
     </footer>
     
+    <script src="script.js"></script>
 </body>
 </html>
