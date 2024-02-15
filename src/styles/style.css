@@ -267,3 +267,43 @@ footer {
   margin: 0;
 }
 
+
+    @media (max-width: 768px) {
+      .header_navigation {
+        flex-direction: column;
+        /* Alterando a direção do flexbox para empilhar itens verticalmente */
+        padding: 25px;
+        /* Reduzindo o padding para se ajustar em telas menores */
+        margin: 30px;
+        width: auto;
+      }
+  
+      .header_navigation img {
+        display: none;
+      }
+  
+      /* CAROUSEL */
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+  
+      .text-home {
+        padding: 20px 20px;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+      }
+      .carousel-item {
+        height: auto; /* Ajuste a altura conforme necessário */
+        width: 98%;
+    } 
+}
+      /* SECTION NOVIDADES */
+        .food {
+          flex-direction: column; /* Alterando a direção do flexbox para empilhar itens verticalmente */
+          align-items: center; /* Alinhando os itens no centro */
+          padding: 20px; /* Reduzindo o padding para telas menores */
+      }
+    
+    
