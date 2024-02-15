@@ -1,61 +1,93 @@
 *,
 *:after,
 *:before {
-	box-sizing: content-box;
+    box-sizing: border-box;
 }
 
-.darkmode {
-	display: block;
-	position: relative;
-	width: 30px;
-	height: 20px;
-	border-radius: 100px;
-	background-color: #000839;
-	overflow: hidden;
-	cursor: pointer;
-	&:before,
-	&:after {
-		display: block;
-		position: absolute;
-		content: "";
-		width: 12px;
-		height: 12px;
-		border-radius: 50px;
-		top: 4px;
-		left: -14px;
-		transition: .5s ease-out;
-	}
-	&:before {
-		background-color: #ffa41b;
-		transform: translateX(17px);
-	}
+.darkmode-toggle {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #000839;
+    overflow: hidden;
+    cursor: pointer;
+}
 
-	&:after {
-		background-color: #000839;
-		left: -10px;
-		transform: scale(0.00001);
-	}
+.darkmode-toggle:before,
+.darkmode-toggle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    top: 4px;
+    transition: .5s ease-out;
+}
+
+.darkmode-toggle:before {
+    background-color: #ffa41b;
+    left: -9px;
+    transform: translateX(13px);
+}
+
+.darkmode-toggle:after {
+    background-color: #000839;
+    left: -12px;
+    transform: scale(0.00001);
 }
 
 input[type="checkbox"] {
-	display: none;
-	&:checked + label {
-		&:before {
-			background-color: #FFF;
-			transform: translateX(30px);
-		}
-		
-		&:after {
-			transform: translateX(20px) scale(1);
-		}
-	}
-}
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* Light text */
+    display: none;
 }
 
-nav.dark-mode {
-    background-color: #333; /* Darker nav */
+input[type="checkbox"]:checked + .darkmode-toggle:before {
+    background-color: #FFF;
+    transform: translateX(22px);
 }
+
+input[type="checkbox"]:checked + .darkmode-toggle:after {
+    transform: translateX(20px) scale(1);
+}
+
+body.darkmode {
+	background-color: #90A053;
+	color: #fcedcc;
+}
+nav.darkmode {
+	background-color: #738042;
+}
+
+.darkmode main,
+.header_navigation .darkmode {
+	background-color: #90A053;
+}
+
+.darkmode .section-news {
+	background-color: #7D351D;
+}
+
+.darkmode .price {
+	background-color: #e4d1a5;
+	color: #7c2e14;
+}
+
+.darkmode .section-gif {
+    background-color: #738042; 
+    color: #ecdebd;
+  }
+
+.darkmode strong {
+  color: #4F553A;
+  font-weight: bold;
+  }
+
+  .darkmode .recomendations {
+	background-color: #7D351D;
+  }
+
+ .darkmode .recomendations button {
+	color:#7D351D;
+ }

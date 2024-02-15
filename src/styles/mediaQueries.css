@@ -1,63 +1,80 @@
-/* Estilos para telas pequenas (até 576px de largura) */
-@media (max-width: 576px) {
-  /* MENU DE NAVEGAÇÃO */
+/* Media queries para tornar o site responsivo */
+
+/* Para telas menores que 576px (como smartphones em modo retrato) */
+@media (max-width: 575.98px) {
   .header_navigation {
-    padding: 0px 20px; /* Reduza o padding para economizar espaço */
+      flex-direction: column;
+      align-items: center;
   }
-
-  .header_navigation ul {
-    flex-direction: column; /* Altere a direção do flex para empilhar os itens verticalmente */
-    margin-bottom: 10px; /* Adicione um pequeno espaço entre os itens */
+  .toggle-menu {
+      display: block;
+      cursor: pointer;
+      margin-bottom: 10px;
   }
-
-  .header_navigation img {
-    width: 60px; /* Reduza o tamanho do logotipo */
+  .menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
   }
-
-  /* CAROUSEL */
-  .container {
-    padding: 20px; /* Reduza o padding do container */
+  .menu li {
+      margin: 10px 0;
   }
-
-  .carousel {
-    width: 100%; /* Faça o carousel ocupar toda a largura do container */
+  #toggle:checked + .menu {
+      display: flex;
   }
-
-  .carousel-item img {
-    height: auto; /* Ajuste a altura da imagem para manter a proporção */
+  .logo {
+      margin-top: 20px;
   }
+}
 
-  /* SECTION NOVIDADES e SECTION RECOMENDADOS PARA VOCÊ */
+/* Para telas entre 576px e 767.98px (como smartphones em modo paisagem e tablets em modo retrato) */
+@media (min-width: 576px) and (max-width: 767.98px) {
   .food, .recomendado {
-    flex-wrap: wrap; /* Permita que os itens quebrem para várias linhas */
-    justify-content: center; /* Centralize os itens */
-    padding: 0px 10px; /* Ajuste o padding para economizar espaço */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
   }
-
-  .food img, .recomendado img {
-    width: 100%; /* Faça as imagens ocuparem toda a largura do contêiner pai */
-    max-width: 200px; /* Defina um tamanho máximo para as imagens */
-    margin-bottom: 10px; /* Adicione um pequeno espaço entre as imagens */
+  .food-item, .recomendado img {
+      width: 45%;
+      margin: 10px;
   }
-
-  .recomendations button {
-    width: 100%; /* Faça o botão ocupar toda a largura */
+  .section-gif img {
+      width: 100%;
   }
-
-  /* SECTION GIF e SECTION SOBRE NÓS */
-  .culinaria, .sobre-nos {
-    flex-direction: column; /* Altere a direção do flex para empilhar os itens verticalmente */
-    align-items: center; /* Centralize os itens */
-    padding: 20px; /* Reduza o padding */
+  .section-gif p {
+      padding: 20px;
+      font-size: 20px;
   }
+}
 
-  .culinaria img, .section-about img {
-    width: 100%; /* Faça as imagens ocuparem toda a largura do contêiner pai */
-    max-width: 300px; /* Defina um tamanho máximo para as imagens */
-    margin-bottom: 20px; /* Adicione um espaço entre as imagens e o texto */
+/* Para telas maiores que 768px */
+@media (min-width: 768px) {
+  .toggle-menu {
+      display: none;
   }
+  .menu {
+      display: flex;
+      justify-content: space-between;
+      width: auto;
+  }
+  .logo {
+      margin-top: 0;
+  }
+}
 
-  .section-gif p, .section-about p {
-    text-align: center; /* Centralize o texto */
+/* Media query para ajustar o rodapé em telas menores */
+@media (max-width: 768px) {
+  .payments {
+      padding: 20px;
+  }
+  .footer {
+      margin-bottom: 20px;
+  }
+  .footer col {
+      margin-bottom: 20px;
+  }
+  .payments img {
+      width: 30px;
   }
 }

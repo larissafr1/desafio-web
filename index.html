@@ -18,10 +18,10 @@
 
     <!-- ESTILIZAÇÃO -->
     <link rel="stylesheet" href="./src/styles/reset.css">
-    <link rel="stylesheet" href="./src/styles/mediaQueries.css">
     <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="stylesheet" href="./src/styles/scroll.css">
     <link rel="stylesheet" href="./src/styles/darkMode.css">
+    <link rel="stylesheet" href="./src/styles/mediaQueries.css">
 
     <title>Desafio PD</title>
 
@@ -50,8 +50,8 @@
             <ul>
               <li><a href="#sobre-nos">SOBRE NÓS</a></li>
             </ul>
-            <input type="checkbox" id="toggle"/>
-            <label for="toggle" class="darkmode"></label>
+            <input type="checkbox" id="toggle">
+            <label class="darkmode-toggle" for="toggle"></label>
     </nav>
 
     <main>
@@ -89,39 +89,12 @@
           </div>
           
 
-
-          <div class="slider">
-            <div class="slide-track">
-              <div class="slide">
-                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
-              </div>
-              <div class="slide">
-                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
-              </div>          <div class="slide">
-                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
-              </div>          <div class="slide">
-                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
-              </div>          <div class="slide">
-                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
-              </div>          <div class="slide">
-                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
-              </div>          <div class="slide">
-                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
-              </div>          <div class="slide">
-                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
-              </div>          <div class="slide">
-                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
-              </div>          <div class="slide">
-                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
-              </div>          <div class="slide">
-                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
-              </div>
-            </div>
-          </div>
+        <!-- ROLAGEM HORIZONTAL -->
+        <div class="scrolling-wrapper">
+        </div>
 
 
-
-          <!-- SECTION NOVIDADES -->
+        <!-- SECTION NOVIDADES -->
         <div class="news">
           <section class="section-news">
             <h1 class="subtitle">NOVIDADES</h1>
@@ -133,6 +106,10 @@
               <div class="food-item">
                 <img src="./src/assets/comidas/pizza.jpg" alt="">
                 <figcaption class="price">$50</figcaption>
+              </div>
+              <div class="food-item">
+                <img src="./src/assets/comidas/hotdog.jpg" alt="">
+                <figcaption class="price">$45</figcaption>
               </div>
               <div class="food-item">
                 <img src="./src/assets/comidas/nachos.jpg" alt="">
@@ -148,9 +125,6 @@
               </div>
           </section>
         </div>
-
-
-
 
 
       <!-- SECTION CULINÁRIA GIF -->
@@ -175,13 +149,14 @@
         <section class="section-recomendations">
             <h1 class="subtitle">RECOMENDADOS PARA VOCÊ</h1>
             <div class="recomendado">
-              <img src="./src/assets/comidas/recomendado.jpg" alt="">
               <img src="./src/assets/comidas/recomendado2.jpg" alt="">
+              <img src="./src/assets/comidas/recomendado.jpg" alt="">
               <img src="./src/assets/comidas/recomendado1.jpg" alt="">
             </div>
             <button>VER MAIS</button>
         </section>
       </div>
+
 
       <!-- SECTION SOBRE NÓS -->
       <div class="sobre-nos" id="sobre-nos">
@@ -195,11 +170,26 @@
           </div>
         </section>
       </div> 
-
     </main>
 
      <!-- RODA PÉ -->
-     <div class="payments">
+    <footer>
+      <div class="footer">
+        <img src="./src/assets/img/footer.png" alt="" class="footer">
+      </div>
+      
+        <div class="options">
+          <h6>LINKS DE AJUDA</h6><br>
+          <h6>AJUDA E SUPORTE</h6><br>
+          <h6>TERMOS E CONDIÇÕES</h6><br>
+        </div>
+    </footer>
+
+
+
+
+
+     <!-- <div class="payments">
         <footer class="text-center text-white">
           <div class="text-center p-3" style="background-color: rgb(30, 33, 36);">
             <div class="container text-center">
@@ -247,7 +237,7 @@
         </footer>
       </div>
 
-    <footer>
+    <footer> -->
 
     
     <script src="script.js"></script>
