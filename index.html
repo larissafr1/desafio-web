@@ -14,11 +14,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="./src/assets/img/logo.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/assets/img/LOGO.png" type="image/x-icon">
 
     <!-- ESTILIZAÇÃO -->
     <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/mediaQueries.css">
     <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/scroll.css">
     <link rel="stylesheet" href="./src/styles/darkMode.css">
 
     <title>Desafio PD</title>
@@ -38,7 +40,7 @@
             </ul>
 
             <a href="">
-              <img src="./src/assets/img/logo.webp" alt="logo">
+              <img src="./src/assets/img/LOGO.png" alt="logo">
           </a>
 
             <ul>
@@ -46,60 +48,31 @@
             </ul>
 
             <ul>
-              <li><a href="">SOBRE NÓS</a></li>
+              <li><a href="#sobre-nos">SOBRE NÓS</a></li>
             </ul>
             <input type="checkbox" id="toggle"/>
             <label for="toggle" class="darkmode"></label>
     </nav>
 
-
-
-
     <main>
         <!-- CAROUSEL -->
-        <!-- <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="2000">
-                <img src="./src/assets/img/carousel.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="1900">
-                <img src="./src/assets/img/carousel2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./src/assets/img/carousel3.jpeg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Próximo</span>
-            </button>
-          </div>
-
-          <div class="col-md-4">
-            <p>DISCOVER</p>
-            <P>NEW</P>
-            <P>TASTES</P>
-          </div> -->
-
-
-
           <div class="container">
+            <div class="text-home">
+              <p><span>DISCOVER</span></p>
+              <p><span>NEW</span></p>
+              <p><span>TASTES</span></p>
+           </div>
             <div class="row">
-              <div class="col-md-8">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="2000">
-                      <img src="./src/assets/img/carousel.jpg" class="d-block w-100" alt="...">
+                      <img src="./src/assets/img/carrosel3.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item" data-bs-interval="1900">
-                      <img src="./src/assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                      <img src="./src/assets/img/carrosel.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                      <img src="./src/assets/img/carousel3.jpeg" class="d-block w-100" alt="...">
+                      <img src="./src/assets/img/carrosel2.jpg" class="d-block w-100" alt="...">
                     </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -112,51 +85,116 @@
                   </button>
                 </div>
               </div>
-              <div class="col-md-4">
-                 <p><span>DISCOVER</span></p>
-                 <p><span>NEW</span></p>
-                 <p><span>TASTES</span></p>
-              </div>
             </div>
           </div>
           
 
 
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
+              </div>          <div class="slide">
+                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
+              </div>          <div class="slide">
+                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
+              </div>          <div class="slide">
+                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
+              </div>          <div class="slide">
+                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
+              </div>          <div class="slide">
+                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
+              </div>          <div class="slide">
+                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
+              </div>          <div class="slide">
+                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
+              </div>          <div class="slide">
+                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
+              </div>          <div class="slide">
+                <img src="./src/assets/img/875a0bcf78bc6042c04b365dd303686b.jpg" height="100" width="250" alt="" />
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- SECTION NOVIDADES -->
         <div class="news">
           <section class="section-news">
-            <h1>NOVIDADES</h1>
+            <h1 class="subtitle">NOVIDADES</h1>
             <div class="food">
-              <img src="./src/assets/comidas/burguer.jpg" alt="">
-              <img src="./src/assets/comidas/pizza.jpg" alt="">
-              <img src="./src/assets/comidas/nachos.jpg" alt="">
-              <img src="./src/assets/comidas/salad.jpg" alt="">
-              <img src="./src/assets/comidas/cereal.jpg" alt="">
-            </div>
+              <div class="food-item">
+                <img src="./src/assets/comidas/burguer.jpg" alt="">
+                <figcaption class="price">$20</figcaption>
+              </div>
+              <div class="food-item">
+                <img src="./src/assets/comidas/pizza.jpg" alt="">
+                <figcaption class="price">$50</figcaption>
+              </div>
+              <div class="food-item">
+                <img src="./src/assets/comidas/nachos.jpg" alt="">
+                <figcaption class="price">$35</figcaption>
+              </div>
+              <div class="food-item">
+                <img src="./src/assets/comidas/salad.jpg" alt="">
+                <figcaption class="price">$10</figcaption>
+              </div>
+              <div class="food-item">
+                <img src="./src/assets/comidas/cereal.jpg" alt="">
+                <figcaption class="price">$15</figcaption>
+              </div>
           </section>
         </div>
 
-        <section class="recomendations">
-            <h1>RECOMENDADOS PARA VOCÊ</h1>
-            <div class="food">
-              <img src="./src/assets/comidas/burguer.jpg" alt="">
-              <img src="./src/assets/comidas/pizza.jpg" alt="">
-              <img src="./src/assets/comidas/nachos.jpg" alt="">
-              <img src="./src/assets/comidas/salad.jpg" alt="">
-              <img src="./src/assets/comidas/cereal.jpg" alt="">
-            </div>
-        </section>
 
 
-        <section class="most_views">
-            <h1>MAIS VISTOS</h1>
-            <div class="food">
-              <img src="./src/assets/comidas/burguer.jpg" alt="">
-              <img src="./src/assets/comidas/pizza.jpg" alt="">
-              <img src="./src/assets/comidas/nachos.jpg" alt="">
-              <img src="./src/assets/comidas/salad.jpg" alt="">
-              <img src="./src/assets/comidas/cereal.jpg" alt="">
-            </div>
+
+
+      <!-- SECTION CULINÁRIA GIF -->
+      <div class="gif">
+        <section class="section-gif">
+          <div class="culinaria">
+           <img src="./src/assets/comidas/waffle.gif" alt="">
+        
+           <p>No <strong>Nhom Nhom Club</strong>, a comida é o grande destaque! Nossos chefs são verdadeiros artistas, misturando 
+             sabores clássicos com um toque moderno. <br>
+             <br>Com ingredientes frescos e sazonais, nosso menu vai te surpreender 
+             a cada garfada. Desde pratos caseiros até criações gourmet, temos opções para todos os gostos.
+             Venha nos visitar e embarque nessa aventura gastronômica!
+          </p>
+        </div>
         </section>
+      </div>
+
+
+        <!-- SECTION RECOMENDADOS PARA VOCÊ -->
+        <div class="recomendations">
+        <section class="section-recomendations">
+            <h1 class="subtitle">RECOMENDADOS PARA VOCÊ</h1>
+            <div class="recomendado">
+              <img src="./src/assets/comidas/recomendado.jpg" alt="">
+              <img src="./src/assets/comidas/recomendado2.jpg" alt="">
+              <img src="./src/assets/comidas/recomendado1.jpg" alt="">
+            </div>
+            <button>VER MAIS</button>
+        </section>
+      </div>
+
+      <!-- SECTION SOBRE NÓS -->
+      <div class="sobre-nos" id="sobre-nos">
+        <section class="about-section">
+          <div class="about-text">
+            <h1 class="subtitle">SOBRE NÓS</h1>
+            <p>Entre no <strong>Nhom Nhom Club</strong> e embarque numa viagem no tempo! Nosso restaurante é um verdadeiro tesouro vintage, onde cada cantinho tem um charme retrô. Aqui, você vai se sentir em casa desde o primeiro momento, com uma atmosfera aconchegante e cheia de personalidade. É o lugar perfeito para os amantes de uma boa comida e de uma vibe única!</p>
+          </div>
+          <div class="about-image">
+            <img src="./src/assets/img/restaurant.jpg" alt="">
+          </div>
+        </section>
+      </div> 
 
     </main>
 
@@ -168,7 +206,7 @@
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
                 <div class="col">
 
-                  <p>PAGAMENTO</p>
+                  <h6>PAGAMENTO</h6>
                   <a><img src="./src/assets/img/paypal.png" width="50" alt=""></a>
                   <a><img src="./src/assets/img/visa.png" width="50" alt=""></a>
                   <a><img src="./src/assets/img/mastercard.png" width="50" alt=""></a>
@@ -180,7 +218,7 @@
 
 
                 <div class="col">
-                    <p>LINKS DE AJUDA</p><br>
+                    <h6>LINKS DE AJUDA</h6><br>
                     <a class="nav-link active" aria-current="page" href="#">
                     <h6>AJUDA E SUPORTE</h6><br>
                   </a>
@@ -190,7 +228,7 @@
                 </div>
 
                 <div class="col">
-                  <p>REDES SOCIAIS</p><br>
+                  <h6 class="footer">REDES SOCIAIS</h6><br>
                   <a href="facebook"><img src="./src/assets/img/facebook.png" width="80" alt=""></a><br>
                   <br><a href="https://www.instagram.com/vergecompany/" target="_blank"><img src="./src/assets/img/instagram.png" width="30" alt=""></a>
                   <a href="twitter"><img src="./src/assets/img/twitter.png" width="30" alt=""></a>
@@ -198,8 +236,8 @@
                 </div>
 
                 <div class="col">
-                  <p>CONTATO</p><br>
-                  <p class="endereco">RUA TOMÉ DE SOUZA | N° 810 | SAVASSI</p><br>
+                  <h6 class="footer">CONTATO</h6><br>
+                  <h6 class="footer">RUA TOMÉ DE SOUZA | N° 810 | SAVASSI</h6><br>
                     </a><img src="./src/assets/img/whatsapp.png" width="20" alt=""> (31) 99999-9999
                   </p>
                 </div>
@@ -211,8 +249,8 @@
 
     <footer>
 
-    </footer>
     
     <script src="script.js"></script>
+    
 </body>
 </html>

@@ -1,0 +1,63 @@
+/* Estilos para telas pequenas (até 576px de largura) */
+@media (max-width: 576px) {
+  /* MENU DE NAVEGAÇÃO */
+  .header_navigation {
+    padding: 0px 20px; /* Reduza o padding para economizar espaço */
+  }
+
+  .header_navigation ul {
+    flex-direction: column; /* Altere a direção do flex para empilhar os itens verticalmente */
+    margin-bottom: 10px; /* Adicione um pequeno espaço entre os itens */
+  }
+
+  .header_navigation img {
+    width: 60px; /* Reduza o tamanho do logotipo */
+  }
+
+  /* CAROUSEL */
+  .container {
+    padding: 20px; /* Reduza o padding do container */
+  }
+
+  .carousel {
+    width: 100%; /* Faça o carousel ocupar toda a largura do container */
+  }
+
+  .carousel-item img {
+    height: auto; /* Ajuste a altura da imagem para manter a proporção */
+  }
+
+  /* SECTION NOVIDADES e SECTION RECOMENDADOS PARA VOCÊ */
+  .food, .recomendado {
+    flex-wrap: wrap; /* Permita que os itens quebrem para várias linhas */
+    justify-content: center; /* Centralize os itens */
+    padding: 0px 10px; /* Ajuste o padding para economizar espaço */
+  }
+
+  .food img, .recomendado img {
+    width: 100%; /* Faça as imagens ocuparem toda a largura do contêiner pai */
+    max-width: 200px; /* Defina um tamanho máximo para as imagens */
+    margin-bottom: 10px; /* Adicione um pequeno espaço entre as imagens */
+  }
+
+  .recomendations button {
+    width: 100%; /* Faça o botão ocupar toda a largura */
+  }
+
+  /* SECTION GIF e SECTION SOBRE NÓS */
+  .culinaria, .sobre-nos {
+    flex-direction: column; /* Altere a direção do flex para empilhar os itens verticalmente */
+    align-items: center; /* Centralize os itens */
+    padding: 20px; /* Reduza o padding */
+  }
+
+  .culinaria img, .section-about img {
+    width: 100%; /* Faça as imagens ocuparem toda a largura do contêiner pai */
+    max-width: 300px; /* Defina um tamanho máximo para as imagens */
+    margin-bottom: 20px; /* Adicione um espaço entre as imagens e o texto */
+  }
+
+  .section-gif p, .section-about p {
+    text-align: center; /* Centralize o texto */
+  }
+}
