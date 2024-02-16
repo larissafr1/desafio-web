@@ -263,7 +263,7 @@ strong {
 
 
 /* FOOTER */
-footer {
+/* footer {
   background-color: rgb(30, 33, 36);
   color: #ffffff;
   display: flex;
@@ -282,7 +282,7 @@ footer {
 
 .options h6 {
   margin: 0;
-}
+} */
 
 
 
@@ -323,5 +323,25 @@ footer {
           align-items: center; /* Alinhando os itens no centro */
           padding: 20px; /* Reduzindo o padding para telas menores */
       }
-    
-    
+      .food-img {
+        width: 50%;
+      }
+
+      /* SECTION RECOMENDADOS PARA VOCÊ */
+      /* .recomendado {
+        flex-wrap: wrap;
+      } */
+
+      .recomendado img {
+        width: 200px;
+      }
+
+      .recomendations {
+        height: 525px;
+      }
+
+       /* SECTION SOBRE NÓS */
+
+       .about-image {
+        margin: 30px 30px 0px 0px;
+       }
