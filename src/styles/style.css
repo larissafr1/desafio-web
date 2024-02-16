@@ -7,7 +7,7 @@ relativa ao tamanho da fonte do elemento raiz do documento (normalmente o elemen
 do elemento em si. Isso significa que quando você define um tamanho em "rem", ele é calculado com base no tamanho da fonte 
 do elemento raiz.
 
-Então, quando usamos 16 pixels como base para "rem", significa que 1rem será igual a 16 pixels. Isso facilita os cálculos, 
+Então, quando usamos 16 pixels como base para "rem", significa que 1rem = 16 pixels. Isso facilita os cálculos, 
 especialmente quando você está projetando um site responsivo, pois pode facilmente ajustar o tamanho da fonte raiz para alterar 
 proporcionalmente todos os elementos que usam "rem". */
 
@@ -25,66 +25,68 @@ body {
   justify-content:space-around;
   align-items: center;
   flex-direction: row;
-  margin: 3.125rem; /* 50px / 16px */
-  border-radius: 62.5rem; /* 1000px / 16px */
+  margin: 20px; /* 50px */
+  border-radius: 62.5rem; /* 1000px */
   background-color: #e4d1a5;
-  padding: 0px 6.25rem 0px 10rem; /* 100px / 16px, 160px / 16px */
+  padding: 0px 6.25rem 0px 10rem; /* 100px / 160px */
 }
 
 .header_navigation ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.125rem; /* 18px / 16px */
+  font-size: 1.125rem; /* 18px */
   transition: .3s ease;
 }
 
 .header_navigation ul li a:hover {
   color: #833920;
-  font-size: 1.375rem; /* 22px / 16px */
+  font-size: 1.375rem; /* 22px */
   transition: .3s ease;
 }
 
 .header_navigation img{
-  width: 5.625rem; /* 90px / 16px */
+  width: 5.625rem; /* 90px */
 }
 
 p {
   text-align: left;
-  font-size: 4.375rem; /* 70px / 16px */
+  font-size: 4.375rem; /* 70px */
 }
 
 
 h1 {
   text-align: center;
-  font-size: 1.875rem; /* 30px / 16px */
+  font-size: 1.875rem; /* 30px */
 }
+
 
 
 /* CAROUSEL */
 .container {
   display: flex;
-  padding: 3.125rem; /* 50px / 16px */
+  padding: 3.125rem; /* 50px */
 }
 
 .text-home{
-  padding: 1.25rem 1.875rem; /* 20px / 16px, 30px / 16px */
+  padding: 1.25rem 1.875rem; /* 20px / 30px */
   flex-direction: column;
   justify-content: center;
   margin: auto;
 }
 
 .carousel {
-  width: 50rem; /* 800px / 16px */
-  border-radius: 3.75rem; /* 60px / 16px */
+  width: 45vw; /* 800px */
+  border-radius: 3.75rem; /* 60px */
   overflow: hidden;
   margin: 0 auto;
 }
 
 .carousel-item img {
   width: 100%;
-  border-radius: 3.75rem; /* 60px / 16px */
+  border-radius: 3.75rem; /* 60px */
   height: auto;
 }
+
 
 
 
@@ -92,53 +94,53 @@ h1 {
 .section-news {
   background-color: #7e9c60; 
   width: 100%;
-  height: 30rem; /* 480px / 16px */
-  padding: 3.125rem 0px; /* 50px / 16px */
+  margin: auto;
+  padding: 10px; /* 50px */
 }
   
 .subtitle {
-  padding: 1.875rem 0px; /* 30px / 16px */
-  font-size: 1.875rem; /* 30px / 16px */
+  padding: 1.875rem 0px; /* 30px  */
+  font-size: 1.875rem; /* 30px  */
 }
 
 .food {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 0px 12.5rem; /* 200px / 16px */
+  padding: 0px 12.5rem; /* 200px */
 }
 
 .food img {
-  width: 16.25rem; /* 260px / 16px */ 
+  width: 230px; /* 260px */ 
   height: auto; 
   margin: auto;
-  border-radius: 3.75rem; /* 60px / 16px */
-  padding: 0px 0.625rem; /* 0px / 16px, 10px / 16px */
+  border-radius: 40px;
 }
 
 .food-item {
   text-align: center; 
-  margin-bottom: 1.25rem; /* 20px / 16px */
+  margin-bottom: 1.25rem; /* 20px */
   align-items: center;
 }
 
 .price {
-  font-size: 1.25rem; /* 20px / 16px */
-  margin-top: 0.625rem; /* 10px / 16px */ 
+  font-size: 1.25rem; /* 20px */
+  margin-top: 0.625rem; /* 10px */ 
   font-weight: bold; 
   background-color: #7D351D;
   color: #fce1bf;
-  border-radius: 6.25rem; /* 100px / 16px */
-  margin: 0.3125rem 6.25rem; /* 5px / 16px, 100px / 16px */
-  padding: 0.9375rem; /* 15px / 16px */
+  border-radius: 6.25rem; /* 100px */
+  margin: 0.3125rem 6.25rem; /* 5px / 100px */
+  padding: 12px; /* 15px */
 }
 
 
 
-  /* SECTION GIF */
+ /* SECTION GIF */
   .culinaria {
     display: flex;
-    padding: 6.25rem; /* 100px / 16px */
+    padding: 10vh; /* 15% da altura da tela */
     margin: 0;
   }
 
@@ -149,18 +151,18 @@ h1 {
 
   .section-gif img {
     height: auto;
-    border-radius: 3.75rem; /* 60px / 16px */
-    width: 25rem; /* 400px / 16px */
+    width: 70vh;
+    border-radius: 3.75rem; /* 60px */
   }
 
   .section-gif p {
-    font-size: 1.875rem; /* 30px / 16px */
+    font-size: 25px; /* 30px*/
     text-align: justify;
-    font-weight: 28.125rem; /* 450 / 16px */
+    font-weight:700; /* 450 */
     line-height: 1.2;
     flex-direction: column;
     align-items: center;
-    padding: 1.25rem 1.875rem; /* 20px / 16px, 30px / 16px */
+    padding: 1.25rem 1.875rem; /* 20px / 30px */
     flex-direction: column;
     justify-content: center;
     margin: auto;
@@ -174,7 +176,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50rem; /* 800px / 16px */
+  padding: 2rem;
 }
 
 .section-recomendations {
@@ -184,34 +186,35 @@ h1 {
 .recomendado {
   display: flex;
   justify-content: center;
-  margin: 1.25rem; /* 20px / 16px */
-  padding: 0px 1.25rem; /* 0px / 16px, 20px / 16px */
+  flex-wrap: wrap ;
+  margin: 1vh; /* 1% da altura da tela */
+  padding: 0 1vh; /* 0 nos lados, 1% da altura da tela em cima e em baixo */
 }
 
 .recomendado img {
   height: auto;
-  border-radius: 1.875rem; /* 30px / 16px */
-  width: 20.625rem; /* 330px / 16px */
-  margin: 0 1.25rem; /* 0px / 16px, 20px / 16px */
+  border-radius: 1.875rem; /* 30px */
+  width: 45vh;
+  margin: 0 3vh; 
 }
 
 .recomendations button {
-  font-size: 1.25rem; /* 20px / 16px */
+  font-size: 1.25rem; /* 20px */
   background-color: #f2e7ce;
   color: #566149;
-  width: 6.25rem; /* 100px / 16px */
-  height: 2.5rem; /* 40px / 16px */
+  width: 6.25rem; /* 100px */
+  height: 2.5rem; /* 40px */
   font-weight: bold;
   border: none;
-  margin-top: 1.25rem; /* 20px / 16px */
-  border-radius: 1.875rem; /* 30px / 16px */
+  margin-top: 1.25rem; /* 20px */
+  border-radius: 1.875rem; /* 30px */
 }
 
 .recomendations button:hover {
   background-color: #f2e7ce;
   color: #7D351D;
-  font-size: 1.375rem; /* 22px / 16px */
-  width: 6.875rem; /* 110px / 16px */
+  font-size: 1.375rem; /* 22px */
+  width: 6.875rem; /* 110px */
   transition: .4s ease-in-out;
 }
 
@@ -227,8 +230,7 @@ h1 {
 .about-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.25rem; /* 20px / 16px */
-  margin: 0 auto;
+  gap: 1.25rem; /* 20px */
 }
 
 .about-text {
@@ -238,10 +240,10 @@ h1 {
 
 .about-text p {
   text-align: justify;
-  font-size: 1.5rem; /* 24px / 16px */
+  font-size: 1.5rem; /* 24px */
   font-weight: 400;
   line-height: 1.2;
-  padding: 0px 1.875rem; /* 0px / 16px, 30px / 16px */
+  padding: 0px 1.875rem; /* 0px / 30px */
 }
 
 .about-image {
@@ -262,16 +264,18 @@ strong {
   }
 
 
+
 /* FOOTER */
 footer {
   background-color: rgb(30, 33, 36);
   color: #ffffff;
   display: flex;
   align-items: center;
+  margin-top: -1px;
 }
 
 .footer img {
-  width: 15.625rem; /* 250px / 16px */
+  width: 15.625rem; /* 250px */
 }
 
 .options {
@@ -319,7 +323,6 @@ footer {
 }
       /* SECTION NOVIDADES */
         .food {
-          flex-direction: column; /* Alterando a direção do flexbox para empilhar itens verticalmente */
           align-items: center; /* Alinhando os itens no centro */
           padding: 20px; /* Reduzindo o padding para telas menores */
       }
