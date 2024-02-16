@@ -246,7 +246,7 @@ h1 {
 
 
 /* FOOTER */
-footer {
+/* footer {
   background-color: rgb(30, 33, 36);
   color: #ffffff;
   display: flex;
@@ -265,7 +265,7 @@ footer {
 
 .options h6 {
   margin: 0;
-}
+} */
 
 
     @media (max-width: 768px) {
@@ -347,11 +347,11 @@ footer {
        }
 
        /* SECTION FOOTER */
-
+/* 
        footer {
         margin-top: 20px;
        }
 
        .footer {
         padding-top: 15px;
-       }
+       } */
