@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+
+/* O valor de 16 pixels é comumente usado como o tamanho base para a unidade "rem" em CSS. A unidade "rem" (root em) é 
+relativa ao tamanho da fonte do elemento raiz do documento (normalmente o elemento <html>), e não ao tamanho da fonte 
+do elemento em si. Isso significa que quando você define um tamanho em "rem", ele é calculado com base no tamanho da fonte 
+do elemento raiz.
+
+Então, quando usamos 16 pixels como base para "rem", significa que 1rem = 16 pixels. Isso facilita os cálculos, 
+especialmente quando você está projetando um site responsivo, pois pode facilmente ajustar o tamanho da fonte raiz para alterar 
+proporcionalmente todos os elementos que usam "rem". */
+
+
 body {
   font-family: 'Oswald', sans-serif;
   background-color: #F2E7CE;
@@ -14,66 +25,68 @@ body {
   justify-content:space-around;
   align-items: center;
   flex-direction: row;
-  margin: 50px;
-  border-radius: 1000px;
+  margin: 20px; /* 50px */
+  border-radius: 62.5rem; /* 1000px */
   background-color: #e4d1a5;
-  padding: 0px 100px 0px 160px;   
+  padding: 0px 6.25rem 0px 10rem; /* 100px / 160px */
 }
 
 .header_navigation ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   transition: .3s ease;
 }
 
 .header_navigation ul li a:hover {
   color: #833920;
-  font-size: 22px;
+  font-size: 1.375rem; /* 22px */
   transition: .3s ease;
 }
 
 .header_navigation img{
-  width: 90px;
+  width: 5.625rem; /* 90px */
 }
 
 p {
   text-align: left;
-  font-size: 70px;
+  font-size: 4.375rem; /* 70px */
 }
 
 
 h1 {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px */
 }
+
 
 
 /* CAROUSEL */
 .container {
   display: flex;
-  padding: 50px;
+  padding: 3.125rem; /* 50px */
 }
 
 .text-home{
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem; /* 20px / 30px */
   flex-direction: column;
   justify-content: center;
   margin: auto;
 }
 
 .carousel {
-  width: 800px;
-  border-radius: 60px;
+  width: 45vw; /* 800px */
+  border-radius: 3.75rem; /* 60px */
   overflow: hidden;
   margin: 0 auto;
 }
 
 .carousel-item img {
   width: 100%;
-  border-radius: 60px;
+  border-radius: 3.75rem; /* 60px */
   height: auto;
 }
+
 
 
 
@@ -86,48 +99,48 @@ h1 {
 }
   
 .subtitle {
-  padding: 30px 0px;
-  font-size: 30px;
+  padding: 1.875rem 0px; /* 30px  */
+  font-size: 1.875rem; /* 30px  */
 }
 
 .food {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 0px 200px;
+  padding: 0px 12.5rem; /* 200px */
 }
 
 .food img {
-  width: 260px; 
+  width: 230px; /* 260px */ 
   height: auto; 
   margin: auto;
-  border-radius: 60px;
-  padding: 0px 10px;
+  border-radius: 40px;
 }
 
 .food-item {
   text-align: center; 
-  margin-bottom: 20px; 
+  margin-bottom: 1.25rem; /* 20px */
   align-items: center;
 }
 
 .price {
-  font-size: 20px;
-  margin-top: 10px; 
+  font-size: 1.25rem; /* 20px */
+  margin-top: 0.625rem; /* 10px */ 
   font-weight: bold; 
   background-color: #7D351D;
   color: #fce1bf;
-  border-radius: 100%;
-  margin: 5px 100px;
-  padding: 15px;
+  border-radius: 6.25rem; /* 100px */
+  margin: 0.3125rem 6.25rem; /* 5px / 100px */
+  padding: 12px; /* 15px */
 }
 
 
 
-  /* SECTION GIF */
+ /* SECTION GIF */
   .culinaria {
     display: flex;
-    padding: 100px;
+    padding: 10vh; /* 15% da altura da tela */
     margin: 0;
   }
 
@@ -138,18 +151,18 @@ h1 {
 
   .section-gif img {
     height: auto;
-    border-radius: 60px;
-    width: 400px;
+    width: 70vh;
+    border-radius: 3.75rem; /* 60px */
   }
 
   .section-gif p {
-    font-size: 30px;
+    font-size: 25px; /* 30px*/
     text-align: justify;
-    font-weight: 450;
+    font-weight:700; /* 450 */
     line-height: 1.2;
     flex-direction: column;
     align-items: center;
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem; /* 20px / 30px */
     flex-direction: column;
     justify-content: center;
     margin: auto;
@@ -158,12 +171,12 @@ h1 {
 
 
 /* SECTION RECOMENDADOS PARA VOCÊ */
- .recomendations {
+.recomendations {
   background-color: #70865a; 
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  padding: 2rem;
 }
 
 .section-recomendations {
@@ -173,40 +186,43 @@ h1 {
 .recomendado {
   display: flex;
   justify-content: center;
-  margin: 20px; 
-  padding: 0px 20px;
+  flex-wrap: wrap ;
+  margin: 1vh; /* 1% da altura da tela */
+  padding: 0 1vh; /* 0 nos lados, 1% da altura da tela em cima e em baixo */
 }
 
 .recomendado img {
   height: auto;
-  border-radius: 30px;
-  width: 330px;
-  margin: 0 20px;
+  border-radius: 1.875rem; /* 30px */
+  width: 45vh;
+  margin: 0 3vh; 
 }
 
 .recomendations button {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   background-color: #f2e7ce;
   color: #566149;
-  width: 100px;
-  height: 40px;
+  width: 6.25rem; /* 100px */
+  height: 2.5rem; /* 40px */
   font-weight: bold;
   border: none;
-  margin-top: 20px;
-  border-radius: 30px;
+  margin-top: 1.25rem; /* 20px */
+  border-radius: 1.875rem; /* 30px */
 }
 
 .recomendations button:hover {
   background-color: #f2e7ce;
   color: #7D351D;
-  font-size: 22px;
-  width: 110px;
+  font-size: 1.375rem; /* 22px */
+  width: 6.875rem; /* 110px */
   transition: .4s ease-in-out;
 }
 
 
- /* SECTION SOBRE NÓS */
- .sobre-nos {
+
+
+/* SECTION SOBRE NÓS */
+.sobre-nos {
   display: flex;
   justify-content: center;
 }
@@ -214,8 +230,7 @@ h1 {
 .about-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin: 0 auto;
+  gap: 1.25rem; /* 20px */
 }
 
 .about-text {
@@ -225,10 +240,10 @@ h1 {
 
 .about-text p {
   text-align: justify;
-  font-size: 24px;
-  font-weight: 320;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 400;
   line-height: 1.2;
-  padding: 0px 30px;
+  padding: 0px 1.875rem; /* 0px / 30px */
 }
 
 .about-image {
@@ -244,17 +259,23 @@ h1 {
 }
 
 
+strong {
+  color: #b17507;
+  }
+
+
 
 /* FOOTER */
-footer {
+/* footer {
   background-color: rgb(30, 33, 36);
   color: #ffffff;
   display: flex;
   align-items: center;
+  margin-top: -1px;
 }
 
 .footer img {
-  width: 250px;
+  width: 15.625rem; /* 250px */
 }
 
 .options {
@@ -265,7 +286,46 @@ footer {
 
 .options h6 {
   margin: 0;
+} */
+
+
+
+    @media (max-width: 768px) {
+      .header_navigation {
+        flex-direction: column;
+        /* Alterando a direção do flexbox para empilhar itens verticalmente */
+        padding: 25px;
+        /* Reduzindo o padding para se ajustar em telas menores */
+        margin: 30px;
+        width: auto;
+      }
+  
+      .header_navigation img {
+        display: none;
+      }
+  
+      /* CAROUSEL */
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+  
+      .text-home {
+        padding: 20px 20px;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+      }
+      .carousel-item {
+        height: auto; /* Ajuste a altura conforme necessário */
+        width: 98%;
+    } 
 }
-
-
-   
+      /* SECTION NOVIDADES */
+        .food {
+          flex-direction: column; /* Alterando a direção do flexbox para empilhar itens verticalmente */
+          align-items: center; /* Alinhando os itens no centro */
+          padding: 20px; /* Reduzindo o padding para telas menores */
+      }
+    
+    
