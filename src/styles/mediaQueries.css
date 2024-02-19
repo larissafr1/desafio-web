@@ -1,34 +1,44 @@
 /* Media queries para tornar o site responsivo */
-@media (max-width: 768px) {
-    .header_navigation {
+@media screen and (max-width: 768px){
+  html, body{
+      overflow-x: hidden;
+      }
+  
+/* <!-- MENU DE NAVEGAÇÃO --> */
+  .header_navigation {
       flex-direction: column;
       /* Alterando a direção do flexbox para empilhar itens verticalmente */
-      padding: 25px;
+      padding: 1.563rem;
       /* Reduzindo o padding para se ajustar em telas menores */
-      margin: 30px;
+      margin: 1.875rem;
       width: auto;
     }
-
-    .header_navigation img {
+  
+  .header_navigation ul {
+      padding: 0.5rem 0px;
+    }
+  
+    .ul-list {
       display: none;
     }
 
-    /* CAROUSEL */
-    .container {
+/* <!-- CAROUSEL BOOTSTRAP--> */
+  .container {
       flex-direction: column;
       padding: 20px;
     }
-
-    .text-home {
-      padding: 20px 20px;
+  
+  .text-home {
+      padding: 1.25rem;
       flex-direction: column;
       justify-content: center;
-      margin: auto;
+      margin-bottom: 2rem;
     }
-
-    .carousel-item {
+  
+  .carousel-item {
       height: auto; /* Ajuste a altura conforme necessário */
       width: 98%;
+<<<<<<< HEAD
   } 
 
    /* SECTION NOVIDADES */
@@ -38,3 +48,109 @@
     padding: 20px; /* Reduzindo o padding para telas menores */
  }
 }
+=======
+  }
+  
+/* <!-- SECTION NOVIDADES --> */
+  .section-news {
+      width: 100%;
+      padding:  50px 0px;
+    }
+  .food {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1.25rem;
+    }
+  .food-img {
+      width: 50%;
+    }
+  .food-item {
+      margin: 0.625rem;
+  }
+  
+/* <!-- SECTION CULINÁRIA GIF --> */
+  .recomendado {
+      height: 30rem;
+      width: 40rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .recomendado img {
+      width: 45%;
+      margin: 0.625rem;
+    }
+  
+  .section-gif img {
+      width: 100%;
+      display: none;
+  }
+  
+  .section-gif p {
+      padding: 20px;
+      font-size: 20px;
+  }
+  
+  .vicio {
+      display: none;
+    }
+  
+/* <!-- SECTION SOBRE NÓS --> */  
+  .about-text p {
+      padding-bottom: 3rem;
+      min-width: 300px;
+  }
+  
+  .about-image {
+  margin: 30px 30px 0px 0px;
+  }
+  
+/* SECTION FOOTER */
+  
+  footer {
+      margin-top: 20px;
+         }
+    
+  .footer {
+      padding-top: 15px;
+         }
+  }
+  
+  @media screen and (max-width:600px) {
+/* <!-- SECTION NOVIDADES --> */
+  .food-item {
+      margin: 4rem 4rem 0rem 4rem;
+    }
+    
+  .nachos, .cereal {
+      display: none;
+    }  
+    
+  .price-none {
+      display: none;
+    }
+  
+  .price {
+      display: flex;
+      margin-top: 1rem;
+    }
+  
+  .shake-shack{
+      display: none;
+    }
+  
+/* <!-- SECTION SOBRE NÓS --> */
+  .about-text{
+      padding: 5rem;
+      justify-content: center;
+    }
+  
+  .about-image{
+      display: none;
+    }
+  
+  }
+>>>>>>> 88e44e3a72cb1bec2c0233fe1010df6b8abfa0ad
