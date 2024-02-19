@@ -1,80 +1,47 @@
 /* Media queries para tornar o site responsivo */
-
-/* Para telas menores que 576px (como smartphones em modo retrato) */
-@media (max-width: 575.98px) {
-  .header_navigation {
-      flex-direction: column;
-      align-items: center;
-  }
-  .toggle-menu {
-      display: block;
-      cursor: pointer;
-      margin-bottom: 10px;
-  }
-  .menu {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-  }
-  .menu li {
-      margin: 10px 0;
-  }
-  #toggle:checked + .menu {
-      display: flex;
-  }
-  .logo {
-      margin-top: 20px;
-  }
-}
-
-/* Para telas entre 576px e 767.98px (como smartphones em modo paisagem e tablets em modo retrato) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .food, .recomendado {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-  .food-item, .recomendado img {
-      width: 45%;
-      margin: 10px;
-  }
-  .section-gif img {
-      width: 100%;
-  }
-  .section-gif p {
-      padding: 20px;
-      font-size: 20px;
-  }
-}
-
-/* Para telas maiores que 768px */
-@media (min-width: 768px) {
-  .toggle-menu {
-      display: none;
-  }
-  .menu {
-      display: flex;
-      justify-content: space-between;
-      width: auto;
-  }
-  .logo {
-      margin-top: 0;
-  }
-}
-
-/* Media query para ajustar o rodapé em telas menores */
 @media (max-width: 768px) {
-  .payments {
+    .header_navigation {
+      flex-direction: column;
+      /* Alterando a direção do flexbox para empilhar itens verticalmente */
+      padding: 25px;
+      /* Reduzindo o padding para se ajustar em telas menores */
+      margin: 30px;
+      width: auto;
+    }
+
+    .header_navigation img {
+      display: none;
+    }
+
+    /* CAROUSEL */
+    .container {
+      flex-direction: column;
       padding: 20px;
-  }
-  .footer {
-      margin-bottom: 20px;
-  }
-  .footer col {
-      margin-bottom: 20px;
-  }
-  .payments img {
-      width: 30px;
-  }
+    }
+
+    .text-home {
+      padding: 20px 20px;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+    }
+
+    .carousel-item {
+      height: auto; /* Ajuste a altura conforme necessário */
+      width: 98%;
+  } 
+
+   /* SECTION NOVIDADES */
+   .food {
+    flex-direction: column; /* Alterando a direção do flexbox para empilhar itens verticalmente */
+    align-items: center; /* Alinhando os itens no centro */
+    padding: 20px; /* Reduzindo o padding para telas menores */
 }
+}
+   
+
+
+
+
+
+

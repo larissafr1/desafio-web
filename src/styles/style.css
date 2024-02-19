@@ -96,6 +96,7 @@ h1 {
   width: 100%;
   margin: auto;
   padding: 10px; /* 50px */
+  flex-direction: row;
 }
   
 .subtitle {
@@ -108,7 +109,6 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 0px 12.5rem; /* 200px */
 }
 
 .food img {
@@ -258,74 +258,10 @@ h1 {
   object-fit: cover;
 }
 
-
 strong {
   color: #b17507;
-  }
-
-
-
-/* FOOTER */
-/* footer {
-  background-color: rgb(30, 33, 36);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  margin-top: -1px;
 }
 
-.footer img {
-  width: 15.625rem; /* 250px */
+.footer-section {
+  margin-top: -2rem; 
 }
-
-.options {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.options h6 {
-  margin: 0;
-} */
-
-
-
-    @media (max-width: 768px) {
-      .header_navigation {
-        flex-direction: column;
-        /* Alterando a direção do flexbox para empilhar itens verticalmente */
-        padding: 25px;
-        /* Reduzindo o padding para se ajustar em telas menores */
-        margin: 30px;
-        width: auto;
-      }
-  
-      .header_navigation img {
-        display: none;
-      }
-  
-      /* CAROUSEL */
-      .container {
-        flex-direction: column;
-        padding: 20px;
-      }
-  
-      .text-home {
-        padding: 20px 20px;
-        flex-direction: column;
-        justify-content: center;
-        margin: auto;
-      }
-      .carousel-item {
-        height: auto; /* Ajuste a altura conforme necessário */
-        width: 98%;
-    } 
-}
-      /* SECTION NOVIDADES */
-        .food {
-          flex-direction: column; /* Alterando a direção do flexbox para empilhar itens verticalmente */
-          align-items: center; /* Alinhando os itens no centro */
-          padding: 20px; /* Reduzindo o padding para telas menores */
-      }
-    
-    
