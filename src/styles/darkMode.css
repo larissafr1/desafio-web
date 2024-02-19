@@ -74,6 +74,11 @@ nav.darkmode {
 	color: #7c2e14;
 }
 
+.darkmode .price-none {
+	background-color: #e4d1a5;
+	color: #7c2e14;
+}
+
 .darkmode .section-gif {
     background-color: #738042; 
     color: #ecdebd;
