@@ -1,10 +1,11 @@
 /* Media queries para tornar o site responsivo */
 @media screen and (max-width: 768px){
   html, body{
-      overflow-x: hidden;
-      }
+    overflow-x: hidden;
+  }
   
-/* <!-- MENU DE NAVEGAÇÃO --> */
+
+/* MENU DE NAVEGAÇÃO */
   .header_navigation {
       flex-direction: column;
       /* Alterando a direção do flexbox para empilhar itens verticalmente */
@@ -22,7 +23,8 @@
       display: none;
     }
 
-/* <!-- CAROUSEL BOOTSTRAP--> */
+
+/* CAROUSEL BOOTSTRAP */
   .container {
       flex-direction: column;
       padding: 20px;
@@ -38,20 +40,12 @@
   .carousel-item {
       height: auto; /* Ajuste a altura conforme necessário */
       width: 98%;
-<<<<<<< HEAD
+
   } 
 
-   /* SECTION NOVIDADES */
-   .food {
-    flex-direction: column; /* Alterando a direção do flexbox para empilhar itens verticalmente */
-    align-items: center; /* Alinhando os itens no centro */
-    padding: 20px; /* Reduzindo o padding para telas menores */
- }
-}
-=======
-  }
-  
-/* <!-- SECTION NOVIDADES --> */
+
+
+/* SECTION NOVIDADES */
   .section-news {
       width: 100%;
       padding:  50px 0px;
@@ -69,36 +63,40 @@
   .food-item {
       margin: 0.625rem;
   }
+
+
   
-/* <!-- SECTION CULINÁRIA GIF --> */
+/*  SECTION CULINÁRIA GIF */
   .recomendado {
-      height: 30rem;
-      width: 40rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    height: 30rem;
+    width: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .recomendado img {
-      width: 45%;
-      margin: 0.625rem;
-    }
+    width: 45%;
+    margin: 0.625rem;
+  }
   
   .section-gif img {
-      width: 100%;
-      display: none;
+    width: 100%;
+    display: none;
   }
   
   .section-gif p {
-      padding: 20px;
-      font-size: 20px;
+    padding: 20px;
+    font-size: 20px;
   }
   
   .vicio {
-      display: none;
-    }
+    display: none;
+  }
   
-/* <!-- SECTION SOBRE NÓS --> */  
+
+
+/* SECTION SOBRE NÓS  */  
   .about-text p {
       padding-bottom: 3rem;
       min-width: 300px;
@@ -108,8 +106,8 @@
   margin: 30px 30px 0px 0px;
   }
   
+
 /* SECTION FOOTER */
-  
   footer {
       margin-top: 20px;
          }
@@ -119,6 +117,7 @@
          }
   }
   
+
   @media screen and (max-width:600px) {
 /* <!-- SECTION NOVIDADES --> */
   .food-item {
@@ -142,7 +141,11 @@
       display: none;
     }
   
-/* <!-- SECTION SOBRE NÓS --> */
+.section-news {
+  padding: 5rem;
+}
+
+/* SECTION SOBRE NÓS */
   .about-text{
       padding: 5rem;
       justify-content: center;
@@ -151,6 +154,5 @@
   .about-image{
       display: none;
     }
-  
   }
->>>>>>> 88e44e3a72cb1bec2c0233fe1010df6b8abfa0ad
+
