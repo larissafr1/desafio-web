@@ -36,12 +36,5 @@
     flex-direction: column; /* Alterando a direção do flexbox para empilhar itens verticalmente */
     align-items: center; /* Alinhando os itens no centro */
     padding: 20px; /* Reduzindo o padding para telas menores */
+ }
 }
-}
-   
-
-
-
-
-
-
