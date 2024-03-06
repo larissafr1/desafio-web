@@ -25,9 +25,9 @@ body {
   justify-content:space-around;
   align-items: center;
   flex-direction: row;
-  margin: 20px; /* 50px */
+  margin: 20px; 
   border-radius: 62.5rem; /* 1000px */
-  background-color: #e4d1a5;
+  background-color: #cfbd82;
   padding: 0px 6.25rem 0px 10rem; /* 100px / 160px */
 }
 
@@ -48,7 +48,7 @@ body {
   width: 5.625rem; /* 90px */
 }
 
-p {
+.frase-efeito {
   text-align: left;
   font-size: 4.375rem; /* 70px */
 }
